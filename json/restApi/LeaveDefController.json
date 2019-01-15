@@ -1,0 +1,60 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.0.1",
+    "title" : "Hello World App"
+  },
+  "host" : "192.168.1.100:8080",
+  "basePath" : "/att_g/pws/rest",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json", "application/xml" ],
+  "produces" : [ "application/json", "application/xml" ],
+  "paths" : {
+    "/leaveDef/getLeaveTypeDefine" : {
+      "get" : {
+        "description" : "Method Description -- getLeaveTypeDefine",
+        "operationId" : "getLeaveTypeDefine",
+        "tags" : [ "LeaveDefController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ReturnMap" : {
+      "type" : "object",
+      "properties" : {
+        "retCode" : {
+          "type" : "integer"
+        },
+        "retMsg" : {
+          "type" : "string"
+        },
+        "changeRow" : {
+          "type" : "integer"
+        },
+        "retData" : {
+          "$ref" : "#/definitions/Object"
+        },
+        "listData" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Object"
+          }
+        }
+      }
+    },
+    "Object" : {
+      "type" : "object",
+      "properties" : { }
+    }
+  }
+}

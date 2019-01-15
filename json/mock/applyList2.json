@@ -1,0 +1,5 @@
+{
+	"getApplyList2": [
+		{"src":"./static/img/2.jpg","taskType":"01","msg":"补","bussID":2,"pin":"0001","name":"张三","deptName":"部门1","leaveType":"02","leaveName":"学习培训","beginDateTime":"2018-10-01","endDateTime":"2018-10-02","applyStatus":0}
+	]
+}

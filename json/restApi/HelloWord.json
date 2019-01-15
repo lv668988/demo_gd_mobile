@@ -1,0 +1,48 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.0.1",
+    "title" : "Hello World App"
+  },
+  "host" : "192.168.43.216:8081",
+  "basePath" : "/att_g/pws/rest",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json", "application/xml" ],
+  "produces" : [ "application/json", "application/xml" ],
+  "paths" : {
+    "/hello/getSayHi" : {
+      "get" : {
+        "description" : "Method Description -- sayHi",
+        "operationId" : "sayHi",
+        "tags" : [ "HelloWord" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- uid"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref":"#/definitions/MsgVo"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { 
+  	"MsgVo": {
+  		"type": "object",
+  		"properties":{
+  			"sayHi": {
+  				"type": "string"
+  			}
+  		}
+  	}
+  }
+}

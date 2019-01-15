@@ -1,0 +1,307 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.0.1",
+    "title" : "Hello World App"
+  },
+  "host" : "192.168.1.100:8080",
+  "basePath" : "/att_g/pws/rest",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json", "application/xml" ],
+  "produces" : [ "application/json", "application/xml" ],
+  "paths" : {
+    "/zkeeapply/getSelfEEApplyList" : {
+      "post" : {
+        "description" : "Method Description -- getSelfEEApplyList",
+        "operationId" : "getSelfEEApplyList",
+        "tags" : [ "ZKEEAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- offset"
+        }, {
+          "name" : "limit",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- limit"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/zkeeapply/getEEApprovalList" : {
+      "post" : {
+        "description" : "Method Description -- getEEApprovalList",
+        "operationId" : "getEEApprovalList",
+        "tags" : [ "ZKEEAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        }, {
+          "name" : "bussId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- bussId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/zkeeapply/saveApply" : {
+      "post" : {
+        "description" : "Method Description -- saveApply",
+        "operationId" : "saveApply",
+        "tags" : [ "ZKEEAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- name"
+        }, {
+          "name" : "sex",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- sex"
+        }, {
+          "name" : "birthDay",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- birthDay"
+        }, {
+          "name" : "identityCard",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- identityCard"
+        }, {
+          "name" : "marital",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- marital"
+        }, {
+          "name" : "deptName",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- deptName"
+        }, {
+          "name" : "postName",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- postName"
+        }, {
+          "name" : "phone_Mobile",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- phone_Mobile"
+        }, {
+          "name" : "phone_Work",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- phone_Work"
+        }, {
+          "name" : "phone_Family",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- phone_Family"
+        }, {
+          "name" : "relativesName",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- relativesName"
+        }, {
+          "name" : "relativesCompany",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- relativesCompany"
+        }, {
+          "name" : "relativesPhone_Mobile",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- relativesPhone_Mobile"
+        }, {
+          "name" : "relativesPhone_Work",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- relativesPhone_Work"
+        }, {
+          "name" : "relativesPhone_Family",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- relativesPhone_Family"
+        }, {
+          "name" : "exitAddress",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- exitAddress"
+        }, {
+          "name" : "exitLeaveType",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- exitLeaveType"
+        }, {
+          "name" : "estExitDate",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- estExitDate"
+        }, {
+          "name" : "estEntryDate",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- estEntryDate"
+        }, {
+          "name" : "certType",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- certType"
+        }, {
+          "name" : "certContent",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- certContent"
+        }, {
+          "name" : "familyExitAddress",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- familyExitAddress"
+        }, {
+          "name" : "illegalContent",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- illegalContent"
+        }, {
+          "name" : "estBackDate",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- estBackDate"
+        }, {
+          "name" : "exitReason",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- exitReason"
+        }, {
+          "name" : "familyIsExit",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- familyIsExit"
+        }, {
+          "name" : "isIllegal",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- isIllegal"
+        }, {
+          "name" : "promiseName",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- promiseName"
+        }, {
+          "name" : "promiseDate",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- promiseDate"
+        }, {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ReturnMap" : {
+      "type" : "object",
+      "properties" : {
+        "retCode" : {
+          "type" : "integer"
+        },
+        "retMsg" : {
+          "type" : "string"
+        },
+        "changeRow" : {
+          "type" : "integer"
+        },
+        "retData" : {
+          "$ref" : "#/definitions/Object"
+        },
+        "listData" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Object"
+          }
+        }
+      }
+    },
+    "Object" : {
+      "type" : "object",
+      "properties" : { }
+    }
+  }
+}

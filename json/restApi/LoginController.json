@@ -1,0 +1,73 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.0.1",
+    "title" : "Hello World App"
+  },
+  "host" : "192.168.1.100:8080",
+  "basePath" : "/att_g/pws/rest",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json", "application/xml" ],
+  "produces" : [ "application/json", "application/xml" ],
+  "paths" : {
+    "/login/loginPost" : {
+      "post" : {
+        "description" : "Method Description -- loginPost",
+        "operationId" : "loginPost",
+        "tags" : [ "LoginController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pin",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- pin"
+        }, {
+          "name" : "password",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- password"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ReturnMap" : {
+      "type" : "object",
+      "properties" : {
+        "retCode" : {
+          "type" : "integer"
+        },
+        "retMsg" : {
+          "type" : "string"
+        },
+        "changeRow" : {
+          "type" : "integer"
+        },
+        "retData" : {
+          "$ref" : "#/definitions/Object"
+        },
+        "listData" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Object"
+          }
+        }
+      }
+    },
+    "Object" : {
+      "type" : "object",
+      "properties" : { }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.poin-skin(@bgColor){
+	.poin-skin{
+		/**
+		* x-icon
+		*/
+		
+		//.tabbar-xicon {fill: #999}
+		//.tabbar-xicon-active,theme-xicon {fill: @bgColor}
+		.weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {color:@bgColor}
+		.weui-wepay-flow__info-top:after {border-top-color: @bgColor}
+		.weui-wepay-flow__info-right:after {border-right-color: @bgColor}
+		.weui-wepay-flow__info-bottom:after {border-bottom-color: @bgColor}
+		.weui-wepay-flow__info-left:after {border-left-color: @bgColor}
+		.weui-wepay-flow__process {background-color: @bgColor}
+		
+		/**
+		* flow
+		*/
+		[class^="weui-wepay-flow__info-"] {
+			background-color: @bgColor;
+			padding:6px;
+		}
+		.weui-wepay-flow__li_done .weui-wepay-flow__state{
+		background-color: #b163d6;
+		}
+		/**
+		* x-icon
+		*/
+		.vux-x-icon {
+			fill: @bgColor
+		}
+		/**
+		* checker
+		*/
+		.default-item-class {
+  			border: 1px solid @bgColor;
+  			padding: 5px 15px;
+		}		
+		.default-item-class-selected {  
+		  background:@bgColor;
+		  color:#fff;
+		}
+		.radius-item-class {
+		  border: 1px solid @bgColor;
+		  padding: 5px 15px;
+		  border-radius:20px
+		}
+		.radius-item-class-selected {
+		  background:@bgColor;
+		  color:#fff;
+		}
+		.help-item-class-no{
+			cursor:help;
+			background:#ddd;
+			border: 1px solid #ddd;
+		}
+		.pointer-item-class-no{
+			cursor:pointer;
+			background:#ddd;
+			border: 1px solid #ddd;
+		}
+	/**
+		* calendar/inline-calendar
+	*/
+	.inline-calendar td.is-today>span, .inline-calendar td.is-today.is-disabled{
+		border:1px solid @bgColor;
+		font-weight:600;
+	}
+	/**
+		* x-table
+	*/
+
+	.vux-table th{
+		background-color:#f3edf7;
+	}
+	/**
+		* x-table
+	*/
+
+	.weui-dialog{
+		border-radius:10px;
+	}
+	/**
+		* x-table
+	*/
+	.weui-icon-cancel{
+		color:@bgColor;
+	}
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

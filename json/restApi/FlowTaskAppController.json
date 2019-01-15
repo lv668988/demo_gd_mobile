@@ -1,0 +1,360 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.0.1",
+    "title" : "Hello World App"
+  },
+  "host" : "192.168.1.100:8080",
+  "basePath" : "/att_g/pws/rest",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json", "application/xml" ],
+  "produces" : [ "application/json", "application/xml" ],
+  "paths" : {
+    "/flowTask/flowEnd_CheckLeave" : {
+      "post" : {
+        "description" : "Method Description -- flowEnd_CheckLeave",
+        "operationId" : "flowEnd_CheckLeave",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- id"
+        }, {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/repairTaskCheck" : {
+      "post" : {
+        "description" : "Method Description -- repairTaskCheck",
+        "operationId" : "repairTaskCheck",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- id"
+        }, {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/commitTaskRepair" : {
+      "post" : {
+        "description" : "Method Description -- commitTaskRepair",
+        "operationId" : "commitTaskRepair",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- id"
+        }, {
+          "name" : "businessId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- businessId"
+        }, {
+          "name" : "approvalOrNot",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- approvalOrNot"
+        }, {
+          "name" : "appView",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- appView"
+        }, {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/eeApproval" : {
+      "post" : {
+        "description" : "Method Description -- eeApproval",
+        "operationId" : "eeApproval",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "taskIds",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- taskIds"
+        }, {
+          "name" : "appView",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- appView"
+        }, {
+          "name" : "approvalStatus",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- approvalStatus"
+        }, {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/listAllTaskViewsById" : {
+      "post" : {
+        "description" : "Method Description -- listAllTaskViewsById",
+        "operationId" : "listAllTaskViewsById",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "businessId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- businessId"
+        }, {
+          "name" : "businessType",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- businessType"
+        }, {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/getAppOpinionList" : {
+      "get" : {
+        "description" : "Method Description -- getAppOpinionList",
+        "operationId" : "getAppOpinionList",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/getTaskList" : {
+      "post" : {
+        "description" : "Method Description -- getTaskList",
+        "operationId" : "getTaskList",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        }, {
+          "name" : "approvalStatus",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- approvalStatus"
+        }, {
+          "name" : "seachStr",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- seachStr"
+        }, {
+          "name" : "taskType",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- taskType"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/getTaskListCount" : {
+      "post" : {
+        "description" : "Method Description -- getTaskListCount",
+        "operationId" : "getTaskListCount",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/flowTask/commitTask" : {
+      "post" : {
+        "description" : "Method Description -- commitTask",
+        "operationId" : "commitTask",
+        "tags" : [ "FlowTaskAppController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- id"
+        }, {
+          "name" : "businessId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- businessId"
+        }, {
+          "name" : "approvalOrNot",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- approvalOrNot"
+        }, {
+          "name" : "appView",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- appView"
+        }, {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ReturnMap" : {
+      "type" : "object",
+      "properties" : {
+        "retCode" : {
+          "type" : "integer"
+        },
+        "retMsg" : {
+          "type" : "string"
+        },
+        "changeRow" : {
+          "type" : "integer"
+        },
+        "retData" : {
+          "$ref" : "#/definitions/Object"
+        },
+        "listData" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Object"
+          }
+        }
+      }
+    },
+    "Object" : {
+      "type" : "object",
+      "properties" : { }
+    }
+  }
+}

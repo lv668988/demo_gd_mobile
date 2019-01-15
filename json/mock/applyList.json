@@ -1,0 +1,16 @@
+{
+	"getApplyList": [
+		{"src":"./static/img/1.jpg","taskType":"01","msg":"假","bussID":1,"pin":"0001","name":"张三","deptName":"部门1","leaveType":"01","leaveName":"病假","beginDateTime":"2018-10-01 08:30","endDateTime":"2018-10-01 17:30","applyStatus":0},
+		{"src":"./static/img/2.jpg","taskType":"01","msg":"假","bussID":2,"pin":"0002","name":"李四","deptName":"部门2","leaveType":"01","leaveName":"病假","beginDateTime":"2018-10-01 08:30","endDateTime":"2018-10-01 17:30","applyStatus":0},
+		{"src":"./static/img/3.jpg","taskType":"01","msg":"假","bussID":3,"pin":"0003","name":"王五","deptName":"部门3","leaveType":"02","leaveName":"婚假","beginDateTime":"2018-10-01 08:30","endDateTime":"2018-10-01 17:30","applyStatus":0},
+		{"src":"./static/img/1.jpg","taskType":"02","msg":"补","bussID":4,"pin":"0004","name":"阿萨","deptName":"部门4","leaveType":"02","leaveName":"婚假","beginDateTime":"2018-10-01 08:30","endDateTime":"","applyStatus":0},
+		{"src":"./static/img/2.jpg","taskType":"02","msg":"补","bussID":5,"pin":"0005","name":"找撒","deptName":"部门5","leaveType":"02","leaveName":"婚假","beginDateTime":"2018-10-01 08:30","endDateTime":"","applyStatus":0},
+		{"src":"./static/img/3.jpg","taskType":"02","msg":"补","bussID":6,"pin":"0006","name":"李白","deptName":"部门6","leaveType":"01","leaveName":"病假","beginDateTime":"2018-10-01 17:30","endDateTime":"","applyStatus":0},
+		{"src":"./static/img/1.jpg","taskType":"03","msg":"境","bussID":7,"pin":"0001","name":"张三","deptName":"部门1","leaveType":"01","leaveName":"病假","beginDateTime":"2018-10-01","endDateTime":"2018-10-02","applyStatus":0},
+		{"src":"./static/img/2.jpg","taskType":"03","msg":"境","bussID":8,"pin":"0002","name":"李四","deptName":"部门2","leaveType":"01","leaveName":"病假","beginDateTime":"2018-10-01","endDateTime":"2018-10-02","applyStatus":0},
+		{"src":"./static/img/3.jpg","taskType":"03","msg":"境","bussID":9,"pin":"0003","name":"王五","deptName":"部门3","leaveType":"02","leaveName":"婚假","beginDateTime":"2018-10-01","endDateTime":"2018-10-02","applyStatus":0},
+		{"src":"./static/img/1.jpg","taskType":"01","msg":"假","bussID":10,"pin":"0004","name":"阿萨","deptName":"部门4","leaveType":"02","leaveName":"婚假","beginDateTime":"2018-10-01 08:30","endDateTime":"2018-10-01 17:30","applyStatus":1},
+		{"src":"./static/img/2.jpg","taskType":"02","msg":"补","bussID":11,"pin":"0005","name":"找撒","deptName":"部门5","leaveType":"02","leaveName":"婚假","beginDateTime":"2018-10-01 17:30","endDateTime":"","applyStatus":1},
+		{"src":"./static/img/3.jpg","taskType":"03","msg":"境","bussID":12,"pin":"0006","name":"李白","deptName":"部门6","leaveType":"01","leaveName":"病假","beginDateTime":"2018-10-01","endDateTime":"2018-10-02","applyStatus":1}
+	]
+}

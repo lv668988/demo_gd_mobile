@@ -1,0 +1,114 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.0.1",
+    "title" : "Hello World App"
+  },
+  "host" : "192.168.43.216:8081",
+  "basePath" : "/att_g/pws/rest",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json", "application/xml" ],
+  "produces" : [ "application/json", "application/xml" ],
+  "paths" : {
+    "/idea/getIdeas" : {
+      "get" : {
+        "description" : "Method Description -- searchIdeas",
+        "operationId" : "searchIdeas",
+        "tags" : [ "MobileDemoResource" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- uid"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- offset"
+        }, {
+          "name" : "limit",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- limit"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/PagingData_IdeaBo"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "IdeaBo" : {
+      "type" : "object",
+      "properties" : {
+        "goldenId" : {
+          "type" : "string"
+        },
+        "goldenName" : {
+          "type" : "string"
+        },
+        "supporty" : {
+          "type" : "integer"
+        },
+        "psupport" : {
+          "type" : "integer"
+        },
+        "content" : {
+          "type" : "string"
+        },
+        "modifyDate" : {
+          "type" : "string"
+        },
+        "creatorId" : {
+          "type" : "string"
+        },
+        "author" : {
+          "type" : "string"
+        },
+        "deptName" : {
+          "type" : "string"
+        },
+        "innovationpts" : {
+          "type" : "string"
+        }
+      }
+    },
+    "PagingData_IdeaBo" : {
+      "type" : "object",
+      "properties" : {
+        "offset" : {
+          "type" : "integer"
+        },
+        "total" : {
+          "type" : "integer"
+        },
+        "limit" : {
+          "type" : "integer"
+        },
+        "search" : {
+          "type" : "string"
+        },
+        "sort" : {
+          "type" : "string"
+        },
+        "rows" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/IdeaBo"
+          }
+        },
+        "order" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

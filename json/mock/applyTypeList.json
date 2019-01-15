@@ -1,0 +1,11 @@
+{
+	"getApplyTypeList": [
+		{"value":"01","name":"公差"},
+		{"value":"02","name":"学习培训"},
+		{"value":"03","name":"婚假"},
+		{"value":"04","name":"年休假"},
+		{"value":"05","name":"产假"},
+		{"value":"06","name":"工伤假"},
+		{"value":"07","name":"探亲假"}
+	]
+}

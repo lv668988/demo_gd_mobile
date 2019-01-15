@@ -1,0 +1,238 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.0.1",
+    "title" : "Hello World App"
+  },
+  "host" : "192.168.1.100:8080",
+  "basePath" : "/att_g/pws/rest",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json", "application/xml" ],
+  "produces" : [ "application/json", "application/xml" ],
+  "paths" : {
+    "/leave/findApproverByPage" : {
+      "post" : {
+        "description" : "Method Description -- findApproverByPage",
+        "operationId" : "findApproverByPage",
+        "tags" : [ "LeaveApplyController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        }, {
+          "name" : "leaveIdOrLeaveTypeId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- leaveIdOrLeaveTypeId"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/leave/getSelfLeaveApplyList" : {
+      "post" : {
+        "description" : "Method Description -- getSelfLeaveApplyList",
+        "operationId" : "getSelfLeaveApplyList",
+        "tags" : [ "LeaveApplyController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- offset"
+        }, {
+          "name" : "limit",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- limit"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/leave/legalCheck" : {
+      "post" : {
+        "description" : "Method Description -- legalCheck",
+        "operationId" : "legalCheck",
+        "tags" : [ "LeaveApplyController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        }, {
+          "name" : "leaveType",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- leaveType"
+        }, {
+          "name" : "beginDateTime",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- beginDateTime"
+        }, {
+          "name" : "endDateTime",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- endDateTime"
+        }, {
+          "name" : "isPast",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- isPast"
+        }, {
+          "name" : "isFuture",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- isFuture"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "$ref" : "#/definitions/Object"
+              }
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    },
+    "/leave/insertLeaveApply" : {
+      "post" : {
+        "description" : "Method Description -- insertLeaveApply",
+        "operationId" : "insertLeaveApply",
+        "tags" : [ "LeaveApplyController" ],
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tokenId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- tokenId"
+        }, {
+          "name" : "leaveTypeId",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- leaveTypeId"
+        }, {
+          "name" : "leaveTypeName",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- leaveTypeName"
+        }, {
+          "name" : "beginDateTime",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- beginDateTime"
+        }, {
+          "name" : "endDateTime",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- endDateTime"
+        }, {
+          "name" : "applyReasons",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- applyReasons"
+        }, {
+          "name" : "leaveSource",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- leaveSource"
+        }, {
+          "name" : "applyFiles",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- applyFiles"
+        }, {
+          "name" : "approver",
+          "in" : "query",
+          "required" : "false",
+          "type" : "string",
+          "description" : "parameter name -- approver"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/ReturnMap"
+            },
+            "description" : "Response OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ReturnMap" : {
+      "type" : "object",
+      "properties" : {
+        "retCode" : {
+          "type" : "integer"
+        },
+        "retMsg" : {
+          "type" : "string"
+        },
+        "changeRow" : {
+          "type" : "integer"
+        },
+        "retData" : {
+          "$ref" : "#/definitions/Object"
+        },
+        "listData" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Object"
+          }
+        }
+      }
+    },
+    "Object" : {
+      "type" : "object",
+      "properties" : { }
+    }
+  }
+}

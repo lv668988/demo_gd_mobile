@@ -1,0 +1,7 @@
+{
+	"getSwiperList": [
+		{"url":"/imgList","img":"./static/img/1.jpg","title":"banner1"},
+		{"url":"/imgList","img":"./static/img/2.jpg","title":"banner2"},
+		{"url":"/imgList","img":"./static/img/3.jpg","title":"banner3"}
+	]
+}

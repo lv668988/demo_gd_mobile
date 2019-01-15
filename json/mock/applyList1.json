@@ -1,0 +1,5 @@
+{
+	"getApplyList1": [
+		{"src":"./static/img/1.jpg","taskType":"01","msg":"假","bussID":1,"pin":"0001","name":"张三","deptName":"部门1","leaveType":"01","leaveName":"公差","beginDateTime":"2018-10-01","endDateTime":"2018-10-02","applyStatus":1}
+	]
+}

@@ -1,0 +1,5 @@
+{
+	"getApplyList3": [
+		{"src":"./static/img/3.jpg","taskType":"01","msg":"境","bussID":3,"pin":"0001","name":"张三","deptName":"部门1","leaveType":"03","leaveName":"婚假","beginDateTime":"2018-10-01","endDateTime":"2018-10-02","applyStatus":0}
+	]
+}

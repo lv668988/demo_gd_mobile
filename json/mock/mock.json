@@ -1,0 +1,61 @@
+{
+	"getSwiperList": [
+		{"url":"/imgList","img":"./static/swiper/1.jpg","title":"鍥句竴"},
+		{"url":"/imgList","img":"./static/swiper/2.jpg","title":"鍥句簩"},
+		{"url":"/imgList","img":"./static/swiper/3.jpg","title":"鍥句笁"},
+		{"url":"/imgList","img":"./static/swiper/12.jpg","title":"鍥惧洓"},
+		{"url":"/imgList","img":"./static/swiper/13.jpg","title":"鍥句簲"}],
+	"indexPanelList": [{
+        "src": "./static/swiper/1.jpg",
+        "title": "鏍囬涓�",
+        "desc": "鐢卞悇绉嶇墿璐ㄧ粍鎴愮殑宸ㄥ瀷鐞冪姸澶╀綋锛屽彨鍋氭槦鐞冦�傛槦鐞冩湁涓�瀹氱殑褰㈢姸锛屾湁鑷繁鐨勮繍琛岃建閬撱��",
+        "url": "/listInfo"
+      }, {
+        "src": "./static/swiper/2.jpg",
+        "title": "鏍囬浜�",
+        "desc": "鐢卞悇绉嶇墿璐ㄧ粍鎴愮殑宸ㄥ瀷鐞冪姸澶╀綋锛屽彨鍋氭槦鐞冦�傛槦鐞冩湁涓�瀹氱殑褰㈢姸锛屾湁鑷繁鐨勮繍琛岃建閬撱��",
+        "url": {
+          "path": "/listInfo",
+          "replace": "false"
+        }
+      },{
+        "src": "./static/swiper/3.jpg",
+        "title": "鏍囬涓�",
+        "desc": "鐢卞悇绉嶇墿璐ㄧ粍鎴愮殑宸ㄥ瀷鐞冪姸澶╀綋锛屽彨鍋氭槦鐞冦�傛槦鐞冩湁涓�瀹氱殑褰㈢姸锛屾湁鑷繁鐨勮繍琛岃建閬撱��",
+        "url": {
+          "path": "/listInfo",
+          "replace": "false"
+        }
+      }],
+      "scrollData":[{
+      	"pdImg":"./static/swiper/1.jpg",
+      	"pdName":"aaa",
+      	"pdPrice":"100.00",
+      	"pdSold":"111"
+      },{
+      	"pdImg":"./static/swiper/2.jpg",
+      	"pdName":"bbb",
+      	"pdPrice":"200.00",
+		"pdSold":"222"
+      },{
+      	"pdImg":"./static/swiper/3.jpg",
+      	"pdName":"ccc",
+      	"pdPrice":"300.00",
+      	"pdSold":"333"
+      },{
+      	"pdImg":"./static/swiper/new1.jpg",
+      	"pdName":"ddd",
+      	"pdPrice":"400.00",
+      	"pdSold":"444"
+      },{
+      	"pdImg":"./static/swiper/new2.jpg",
+      	"pdName":"fff",
+      	"pdPrice":"500.00",
+      	"pdSold":"555"
+      },{
+      	"pdImg":"./static/swiper/new3.jpg",
+      	"pdName":"eee",
+      	"pdPrice":"600.00",
+      	"pdSold":"666"
+      }]
+}
